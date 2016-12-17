@@ -19,13 +19,14 @@ var client = new Twitter({
     access_token_secret: keys.twitterKeys.access_token_secret
 });
 
-// OMDB Query URL
+// OMDB Query URLs
 var omdbQueryUrl = 'http://www.omdbapi.com/?t=' + mediaName + '&y=&plot=short&tomatoes=true&r=json';
 var undefinedUrl = 'http://www.omdbapi.com/?t=Mr. Nobody&y=&plot=short&tomatoes=true&r=json';
 
 // call run function
 run(command, mediaName);
 
+// run function
 function run(command, mediaName) {
 
     // ** ------ Twitter API ------ ** //
